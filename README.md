@@ -22,20 +22,5 @@ Below are some key visual insights from the dashboard:
 ### 3️⃣ Final Summary & Insights
 ![Final Summary](IMAGES/final_summary.png)
 
-## 🚀 Installation & Running Locally
 
-```bash
-# Clone the repository
-git clone https://github.com/yourusername/customer-segmentation-dashboard.git
-cd customer-segmentation-dashboard
-
-# Create a virtual environment
-python3 -m venv venv
-source venv/bin/activate  # On Windows use: venv\Scripts\activate
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Run the Streamlit app
-streamlit run SCRIPTS/customer_segmentation_dashboard.py
 
