@@ -34,4 +34,4 @@ rfm["RFM_Score"] = rfm["R_Score"].astype(str) + rfm["F_Score"].astype(str) + rfm
 # Save RFM table
 rfm.to_csv("/Users/vishwarajsaxena/Desktop/Project1/DATA/rfm_scores.csv")
 
-print("\n✅ RFM Analysis Complete! Results saved as 'rfm_scores.csv'")
+print("\n RFM Analysis Complete! Results saved as 'rfm_scores.csv'")
