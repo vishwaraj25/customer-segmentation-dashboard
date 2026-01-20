@@ -5,22 +5,10 @@ This project is a **customer segmentation dashboard** that helps businesses anal
 
 ##  Features
 -  **RFM Analysis** for customer segmentation  
-- 📊 **Interactive visualizations** using **Streamlit & Matplotlib**  
-- 📈 **Cluster analysis** with K-Means & Hierarchical clustering  
-- 🔍 **Filters & comparison tools** for deeper insights  
+-  **Interactive visualizations** using **Streamlit & Matplotlib**  
+-  **Cluster analysis** with K-Means & Hierarchical clustering  
+-  **Filters & comparison tools** for deeper insights  
 
-
-##  Screenshots
-Below are some key visual insights from the dashboard:
-
-### 1️ Purchase Frequency Distribution
-![Purchase Frequency](IMAGES/rfm.png)
-
-### 2️ Recency vs Frequency Analysis
-![Recency vs Frequency](IMAGES/monetary_vs_frequency.png)
-
-### 3️ Final Summary & Insights
-![Final Summary](IMAGES/final_summary.png)
 
 
 
