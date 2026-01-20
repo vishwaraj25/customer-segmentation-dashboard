@@ -2,17 +2,17 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-# Load the clustered RFM data
+
 rfm_data = pd.read_csv('/Users/vishwarajsaxena/Desktop/Project1/DATA/clustered_rfm.csv')
 
-# Group by KMeans_Cluster and calculate mean values
+
 cluster_summary = rfm_data.groupby('KMeans_Cluster').agg({
     'Recency': 'mean',
     'Frequency': 'mean',
     'Monetary': 'mean'
 }).reset_index()
 
-# Plot bar chart
+
 plt.figure(figsize=(10, 5))
 cluster_summary.set_index('KMeans_Cluster').plot(kind='bar', figsize=(10, 6))
 plt.title('Customer Clusters - Mean Recency, Frequency, Monetary')
@@ -24,7 +24,7 @@ plt.grid(axis='y', linestyle='--', alpha=0.7)
 plt.savefig('/Users/vishwarajsaxena/Desktop/Project1/OUTPUT/cluster_comparison.png')
 plt.show()
 
-# Heatmap for correlation
+
 plt.figure(figsize=(8, 6))
 sns.heatmap(cluster_summary.set_index('KMeans_Cluster').corr(), annot=True, cmap='coolwarm', fmt=".2f")
 plt.title('Correlation Heatmap of RFM Metrics')
